@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,13 +8,19 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/main.css">
-
+        <!--[if gte IE 9]>
+          <style type="text/css">
+            .navbar {
+               filter: none;
+            }
+          </style>
+        <![endif]-->
     </head>
     <body>
 
         <header>
             <div class="navbar">
-                <h1>WebRTC Project</h1>
+                <h1><a href="/">WebRTC Project</a></h1>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/about.html">About Me</a></li>
@@ -24,7 +30,16 @@
 
         <div class="content">
             <h1>WebRTC</h1>
-
+            <div class="flipper">
+                <div class="flip-card">
+                    <div class="flip-front">
+                        <img src="/img/webrtc.png" alt="WebRTC Logo" class="hero-img">
+                    </div>
+                    <div class="flip-back">
+                        <p>&#128516; Because peer-to-peer audio, video, and data are awesome! &#128516;</p>
+                    </div>
+                </div>
+            </div>
             <section>
                 <h2>What is it?</h2>
                 <p>According to HTML5 Rocks, "Imagine a world where your phone, TV and computer could all communicate on a common platform. Imagine it was easy to add video chat and peer-to-peer data sharing to your web application. That's the vision of WebRTC."<a href="#footnote1" class="citation">[1]</a></p>
@@ -71,8 +86,8 @@
             </section>
         </div>
 
-        <footer>
-            <p><em><a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">WebRTC Project</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.</em></p>
+        <footer class="content">
+            <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">WebRTC Project</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.</p>
         </footer>
     </body>
 </html>
