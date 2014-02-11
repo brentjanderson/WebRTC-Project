@@ -259,3 +259,113 @@ aside .headshot {
 	border: thin solid #dedede;
 	z-index: -1000;
 }
+
+/* @group Dialog */
+
+.dialog {
+	width: 75%;
+	position: fixed;
+	left: 50%;
+	margin: 0 0 0 -40%;
+	z-index: 10001;
+	background-color: white;
+	padding: 1em;
+	border: thin solid #c2c2c2;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.75);
+	
+	opacity: 0;
+	transition: top 0s, opacity 0s;
+	-webkit-transition: top 0s, opacity 0s;
+	-moz-transition: top 0s, opacity 0s;
+	-o-transition: top 0s, opacity 0s;
+	-ms-transition: top 0s, opacity 0s;
+	
+	top: 0px;
+	opacity: 0;
+
+	transition: top .5s, opacity .5s;
+	-webkit-transition: top .5s, opacity .5s;
+	-moz-transition: top .5s, opacity .5s;
+	-o-transition: top .5s, opacity .5s;
+	-ms-transition: top .5s, opacity .5s;
+}
+
+.dialog.visible {
+	opacity: 1;
+	top: 23px;
+
+	transition: top .5s, opacity .5s;
+	-webkit-transition: top .5s, opacity .5s;
+	-moz-transition: top .5s, opacity .5s;
+	-o-transition: top .5s, opacity .5s;
+	-ms-transition: top .5s, opacity .5s;
+}
+
+.dialog h1 {
+	margin: 0;
+	border-bottom: thin solid #d4d4d4;	
+}
+
+.dialog button {
+	margin: 0;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+	border-top-style: solid;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-right: thin solid #e0e0e0;
+	border-left: thin solid #e0e0e0;
+	transition: color .5s, background .5s;
+	-webkit-transition: color .5s, background .5s;
+	-o-transition: color .5s, background .5s;
+	-ms-transition: color .5s, background .5s;
+	-moz-transition: color .5s, background .5s;
+}
+
+button:hover {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	transition: color .5s, background .5s;
+	-webkit-transition: color .5s, background .5s;
+	-o-transition: color .5s, background .5s;
+	-ms-transition: color .5s, background .5s;
+	-moz-transition: color .5s, background .5s;	
+}
+
+.btn-group :first-child {
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.btn-group :last-child {
+	-webkit-border-top-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	-moz-border-radius-bottomright: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+/* @end */
