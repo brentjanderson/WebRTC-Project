@@ -1,13 +1,13 @@
 $(function(){
-	$.get('../templates/header.html', function(d) {
+	$.get('templates/header.html', function(d) {
 		$(d).appendTo('header');
 	});
 
-	$.get('../templates/footer.html', function(d) {
+	$.get('templates/footer.html', function(d) {
 		$(d).appendTo('footer');
 	});
 
-	$.get('../templates/dialog.html', function(d) {
+	$.get('templates/dialog.html', function(d) {
 		$(d).appendTo('body');
 
 		$('.dialog button[data-evt="extend"]').click(function() {
