@@ -28,5 +28,5 @@ $(function () {
         });
     });
 
-    document.getElementsByTagName('title')[0].text = App.pageTitle + ' | WebRTC Project';
+    $('title').html(App.pageTitle + ' | WebRTC Project');
 });

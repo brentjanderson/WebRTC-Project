@@ -3,11 +3,10 @@
 /*properties
     pageTitle, promptTimer, toggleClass
 */
+App = {};
 
 (function () {
     "use strict";
-
-    var App = {};
 
     App.pageTitle = 'IS 542';
 
@@ -18,5 +17,8 @@
     };
 
     App.promptTimer();
+
+    // Setup some JQuery magic!
+    $('#accordion').accordion();
 
 }());

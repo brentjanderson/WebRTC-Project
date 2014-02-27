@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+
         <!--[if gte IE 9]>
           <style type="text/css">
             .navbar {
@@ -15,11 +17,6 @@
             }
           </style>
         <![endif]-->
-
-        <script src="js/main.js"></script>
-        <script>
-            App.pageTitle = 'Introduction';
-        </script>
     </head>
     <body>
 
@@ -64,29 +61,39 @@
                 
             </section>
             <section>
-                <h2>Examples</h2>
-                <ul>
-                    <li><a href="https://apprtc.appspot.com">AppRTC</a> demonstrates a simple video/audio conference that any number of users can join - like your own simplified Google+ Hangout!</li>
-                    <li><a href="http://wikigolf.herokuapp.com/">WikiGolf</a> has two purposes: to enable social Wikipedia Golf on the general internet, and to gather data for artificial intelligence research. WebRTC is used to establish peered connections between players.</li>
-                    <li><a href="http://cdn.peerjs.com/demo/chat.html">Advanced Chat/File Transfer</a> opens up the peer-to-peer chat and file transfer world. Users can communicate directly without a third-party service, and can even directly transfer files without using another service or sneakernet!</li>
-                </ul>
-            </section>
-            <section>
-                <h2>References</h2>
-                <p>
-                    <ul>
-                        <li id="footnote1"><a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/">HTML5 Rocks - Getting Started with WebRTC</a></li>
-                        <li><a href="http://peerjs.com">PeerJS - Abstraction Library with great examples</a></li>
-                        <li><a href="https://www.webrtc-experiment.com">Other WebRTC examples, including screen sharing</a></li>
-                    </ul>
-                </p>
+                <div id="accordion">
+                    <h2>Examples</h2>
+                    <div>
+                        <ul>
+                            <li><a href="https://apprtc.appspot.com">AppRTC</a> demonstrates a simple video/audio conference that any number of users can join - like your own simplified Google+ Hangout!</li>
+                            <li><a href="http://wikigolf.herokuapp.com/">WikiGolf</a> has two purposes: to enable social Wikipedia Golf on the general internet, and to gather data for artificial intelligence research. WebRTC is used to establish peered connections between players.</li>
+                            <li><a href="http://cdn.peerjs.com/demo/chat.html">Advanced Chat/File Transfer</a> opens up the peer-to-peer chat and file transfer world. Users can communicate directly without a third-party service, and can even directly transfer files without using another service or sneakernet!</li>
+                        </ul>
+                    </div>
+                    <h2>References</h2>
+                    <div>
+                        <p>
+                            <ul>
+                                <li id="footnote1"><a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/">HTML5 Rocks - Getting Started with WebRTC</a></li>
+                                <li><a href="http://peerjs.com">PeerJS - Abstraction Library with great examples</a></li>
+                                <li><a href="https://www.webrtc-experiment.com">Other WebRTC examples, including screen sharing</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </section>
         </div>
 
         <footer class="content"></footer>
 
-        <script src="js/vendor/jquery-1.10.1.min.js"></script>
-        <script src="js/templates.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
+        <script src="js/main.js"></script>
+        <script>
+            App.pageTitle = 'Introduction';
+        </script>
+        <script src="js/templates.js"></script>
     </body>
 </html>
