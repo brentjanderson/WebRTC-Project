@@ -1,11 +1,22 @@
-window.App = {};
+/*jslint browser: true */
+/*global $:false */
+/*properties
+    pageTitle, promptTimer, toggleClass
+*/
 
-App.pageTitle = 'IS 542';
+(function () {
+    "use strict";
 
-App.promptTimer = function() {
-	setTimeout(function(){
-		$('.dialog').toggleClass('visible');
-	}, 10 * 1000);
-};
+    var App = {};
 
-App.promptTimer();
+    App.pageTitle = 'IS 542';
+
+    App.promptTimer = function () {
+        setTimeout(function () {
+            $('.dialog').toggleClass('visible');
+        }, 10 * 1000);
+    };
+
+    App.promptTimer();
+
+}());

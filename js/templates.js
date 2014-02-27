@@ -1,24 +1,32 @@
-$(function(){
-	$.get('templates/header.html', function(d) {
-		$(d).appendTo('header');
-	});
+/*jslint browser: true */
+/*global $:false,App:false*/
+/*properties
+    appendTo, click, get, getElementsByTagName, href, location, pageTitle,
+    promptTimer, text, toggleClass
+*/
 
-	$.get('templates/footer.html', function(d) {
-		$(d).appendTo('footer');
-	});
+$(function () {
+    "use strict";
+    $.get('templates/header.html', function (d) {
+        $(d).appendTo('header');
+    });
 
-	$.get('templates/dialog.html', function(d) {
-		$(d).appendTo('body');
+    $.get('templates/footer.html', function (d) {
+        $(d).appendTo('footer');
+    });
 
-		$('.dialog button[data-evt="extend"]').click(function() {
-			$('.dialog').toggleClass('visible');
-			App.promptTimer();
-		});
+    $.get('templates/dialog.html', function (d) {
+        $(d).appendTo('body');
 
-		$('.dialog button[data-evt="end"]').click(function() {
-			window.location.href = 'https://www.google.com';
-		});
-	});
+        $('.dialog button[data-evt="extend"]').click(function () {
+            $('.dialog').toggleClass('visible');
+            App.promptTimer();
+        });
 
-    document.getElementsByTagName('title')[0].text = App.pageTitle + ' | WebRTC Project'
+        $('.dialog button[data-evt="end"]').click(function () {
+            window.location.href = 'https://www.google.com';
+        });
+    });
+
+    document.getElementsByTagName('title')[0].text = App.pageTitle + ' | WebRTC Project';
 });
